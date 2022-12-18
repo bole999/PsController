@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="first-body">
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" alt="" class="logo" class="menu-icon">
+        <nav>
+          <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="togglemenu()" >
+
+      </div>
+
+      <section class="about">
+        <div class="main">
+          <img src="images/controller.png" >
+          <div class="about-text">
+            <h1>About the product</h1>
+            <h5>DUALSHOCK®4 Wireless Controller</h5>
+            <p>Get the edge with a much tighter sense of control over in-game actions. See even more of your games with the integrated light bar that glows with various colors depending on in-game action - now visible on the touch pad. Charge the controller's internal battery from your PS4™ USB port, giving you hassle-free charging as you play. Listen to your games in private and hear every boom, bang and blast with an integrated 3.5mm audio jack for your headphones. Rock and roll as a highly sensitive built-in accelerometer and gyroscope detect the motion, tilt and rotation of your DUALSHOCK 4 wireless controller. Bring your games to life and hear every detail with sound effects coming directly from your DUALSHOCK 4 wireless controller.</p>
+            <button type="button"> Buy Now</button>
+          </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+            menuList.style.maxHeight = "130px";
+          }
+          else{
+            menuList.style.maxHeight = "0px";
+          }
+        }
+
+      </script>
+  </body>
+</html>
